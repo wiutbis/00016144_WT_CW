@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400&family=Orbitron&family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.65);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 90px;
+    cursor: pointer
+}
+
+.navbar{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar .icon{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: #fc90c6;
+}
+
+.navbar li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fc90c6;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.navbar li:hover::after{
+    width: 100%;
+}
+.content{
+    height: 90vh; 
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(images/home_img1.jpeg);
+    background-size: cover;
+    background-position: top 65% right 0;
+    padding-bottom: 160px;
+
+}
+.content h1{
+    font-size: 55px;
+    color: #fc90c6;
+}
+.content p{
+    margin: 50px auto;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 25px;
+}
+.map{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.map h2{
+    padding-top: 50px;
+    color: #fc90c6;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+iframe{
+
+    padding-bottom: 40px;
+    width: 80%;
+    height: 500px;
+}
+
+/* Footer of the location part */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fc90c6;
+    color: white;
+    padding: 30px;
+ }
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: larger;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px o;
+    padding-bottom: 15px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ 
+footer .column img{
+    width: 90px;
+    cursor: pointer
+ }
+
+
+
+ .follow .icons_footer{
+    display: flex;
+    justify-content: space-between;
+
+ }
